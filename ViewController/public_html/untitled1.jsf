@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="untitled1.jsf" id="d1">
+        <af:form id="f1">
+            <af:pageTemplate viewId="/oracle/templates/tabletFirstTemplate.jspx" id="pt1">
+                <f:facet name="header"/>
+                <f:facet name="status"/>
+                <f:facet name="appNav"/>
+                <f:facet name="globalLinks"/>
+                <f:facet name="footer"/>
+                <f:facet name="center">
+                    <af:panelGridLayout id="pgl1">
+                        <af:gridRow marginTop="5px" height="auto" id="gr1">
+                            <af:gridCell marginStart="5px" columnSpan="2" marginEnd="5px" id="gc1" halign="stretch">
+                                <af:panelBox text="PanelBox1" id="pb1" background="medium">
+                                    <f:facet name="toolbar"/>
+                                </af:panelBox>
+                            </af:gridCell>
+                        </af:gridRow>
+                        <af:gridRow marginTop="5px" height="auto" id="gr2">
+                            <af:gridCell marginStart="5px" width="40%" id="gc2" halign="stretch">
+                                <af:panelBox text="PanelBox2" id="pb2">
+                                    <f:facet name="toolbar"/>
+                                </af:panelBox>
+                            </af:gridCell>
+                            <af:gridCell marginStart="5px" width="60%" marginEnd="5px" id="gc3" halign="stretch">
+                                <af:panelBox text="PanelBox3" id="pb3">
+                                    <f:facet name="toolbar"/>
+                                </af:panelBox>
+                            </af:gridCell>
+                        </af:gridRow>
+                        <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr3">
+                            <af:gridCell marginStart="5px" width="40%" id="gc4" halign="stretch">
+                                <af:panelBox text="PanelBox4" id="pb4" background="light">
+                                    <f:facet name="toolbar"/>
+                                </af:panelBox>
+                            </af:gridCell>
+                            <af:gridCell marginStart="5px" width="60%" marginEnd="5px" id="gc5" halign="stretch">
+                                <af:panelBox text="PanelBox5" id="pb5" background="light">
+                                    <f:facet name="toolbar"/>
+                                </af:panelBox>
+                            </af:gridCell>
+                        </af:gridRow>
+                    </af:panelGridLayout>
+                    <af:richTextEditor label="Label 1" id="rte1">
+                        <f:facet name="footer"/>
+                    </af:richTextEditor>
+                </f:facet>        
+                 
+                <f:facet name="start">
+                   <af:spacer height="5" id="s1"/>
+                    <af:panelAccordion id="pa1" discloseNone="true">
+                        <af:showDetailItem id="pane1" text="البرنامج الأول">
+                            <af:panelAccordion id="pa2" discloseNone="true">
+                                <af:showDetailItem id="pane4" text="القسم الأول"/>
+                                <af:showDetailItem id="pane5" text="القسم الثاني"/>
+                                <af:showDetailItem id="pane6" text="القسم الثالث"/>
+                            </af:panelAccordion>
+                        </af:showDetailItem>
+                        <af:showDetailItem id="pane2" text="البرنامج الثاني"/>
+                        <af:showDetailItem id="pane3" text="البرنامج الثالث">
+                            <af:panelBox text="PanelBox6" id="pb6">
+                                <f:facet name="toolbar"/>
+                            </af:panelBox>
+                            <af:panelBox text="PanelBox7" id="pb7">
+                                <f:facet name="toolbar"/>
+                            </af:panelBox>
+                        </af:showDetailItem>
+                    </af:panelAccordion>
+                </f:facet>
+                <f:facet name="end"/>
+                <f:attribute name="endWidth" value="0px"/>
+                <f:attribute name="startWidth" value="220px"/>
+            </af:pageTemplate>
+        </af:form>
+    </af:document>
+</f:view>
