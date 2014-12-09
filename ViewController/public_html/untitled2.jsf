@@ -3,7 +3,7 @@
 
 <f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
     <h1 xmlns="http://www.w3.org/1999/xhtml">
-        Heading1
+        Heading1mm
     </h1>
     <af:document title="untitled2.jsf" id="d1">
         <af:form id="f1">
